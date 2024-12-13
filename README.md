@@ -1,0 +1,2 @@
+# Race Condition in Bash Script
+This repository demonstrates a race condition in a bash script that leads to unpredictable output.  The script creates two files and then uses two background processes to write to them concurrently. The `wait` command waits for both processes to finish, but the order in which they complete is not guaranteed, leading to unexpected results. The solution demonstrates how to prevent this race condition using file locking.
